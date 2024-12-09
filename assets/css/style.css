@@ -145,8 +145,13 @@ buttons:hover .arrow:before {
 .con-form{
     margin-bottom: 30px;
 }
-.form-select{
-    font-size: 14px;
+.form-select {
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  border-radius: 0px;
 }
 .Curri{
     background-color:#0F52BA;
@@ -4486,38 +4491,47 @@ padding: 20px 0px;
 }
 .register-wrap .register-title h3 {
   color: #fff;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 22px;
+  font-family: "Poppins", sans-serif;
 }
 .register-wrap .register-from-area .input-box {
   margin-bottom: 25px;
 }
 .register-wrap .register-from-area .input-box input {
   width: 100%;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   border: none;
-  padding: 10px;
-  color: #999;
-  border-radius: 5px;
+  border-bottom: 1px solid #fff;
+  padding: 5px;
+  background: transparent;
+}
+.register-wrap .register-from-area .input-box ::placeholder{
+  color: #fff;
 }
 .Submit {
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-  width: 100%;
-  background-color: #000091; 
-  background-image: linear-gradient(to right, #000091 , #616dfd);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  background-color: #000091;
+  background-image: linear-gradient(to right, #000091, #616dfd);
   text-align: center;
   color: #ffffff;
-  padding: 10px;
+  padding: 10px 30px;
   border-radius: 5px;
   letter-spacing: 1px;
-  border: 1px solid #fff;
+ border: none;
 }
 .Submit:hover {
   background: #222222;
 }
-
+.submit-button{
+  text-align: center;
+}
+select option{
+  color: #000;
+}
+.btn-close {
+ border-radius: 50px;
+}
 .testimonial-two-wrap {
   /* background: url("../images/bg/register-bg.jpg"); */
   /*float: left;*/
