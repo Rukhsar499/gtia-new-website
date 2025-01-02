@@ -4620,6 +4620,7 @@ select option{
   text-transform: uppercase;
   margin-bottom: 0;
   color:#000;
+  font-size: 16px;
 }
 .single-team-info p {
   color: #000091;
