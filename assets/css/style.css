@@ -4625,6 +4625,7 @@ select option{
   color: #000091;
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 12px;
 }
 .single-team .personsl-socail {
   visibility: hidden;
