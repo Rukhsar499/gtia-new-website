@@ -4248,7 +4248,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     margin-top: 30px;
   }
 }
-
+.single-team-info img{
+  width: 50px !important;
+  margin: auto;
+}
 /*--
     12. About Css
 -------------------*/
@@ -4505,10 +4508,14 @@ padding: 20px 0px;
   border-bottom: 1px solid #fff;
   padding: 5px;
   background: transparent;
+  color: #fff;
 }
 .register-wrap .register-from-area .input-box ::placeholder{
   color: #fff;
+  opacity: 1;
 }
+
+
 .Submit {
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
@@ -4912,7 +4919,7 @@ select option{
 }
 
 .contact-infor {
-  background: #f2f2f2 none repeat scroll 0 0;
+  background: #0d6efd4a none repeat scroll 0 0;
   padding: 20px 30px 3px 30px;
   margin-bottom: 20px;
 }
