@@ -139,7 +139,9 @@ buttons:hover .arrow:before {
   margin-top: 20px;
   padding-right: 20px;
 }
-
+.image-mar{
+  margin-top: 40px;
+}
 .banner{
     display: block;
 }
