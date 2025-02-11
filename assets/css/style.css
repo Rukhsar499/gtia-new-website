@@ -278,6 +278,7 @@ buttons:hover .arrow:before {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 999;
+  right: 1%;
 }
 td, th {
     border: 1px solid #dddddd;
@@ -291,13 +292,14 @@ td, th {
 .icon-bar a {
   display: block;
   text-align: center;
-  padding: 13px;
-  transition: all 0.3s ease;
+  padding: 15px;
+  transition: all 0.3sease;
   color: #fff;
   font-size: 20px;
-  background-color: #0F52BA; 
-  /*background-image: linear-gradient(to right, #000091 , #616dfd);*/
-  margin-bottom: 1px;
+  background-color: #0F52BA;
+  background-image: linear-gradient(to right, #000091, #616dfd);
+  margin-bottom: 4px;
+  border-radius: 20px;
 }
 .fa-facebook, .fa-linkedin, .fa-youtube, .fa-pinterest{
   color: #fff;
