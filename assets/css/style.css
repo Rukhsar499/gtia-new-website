@@ -3052,6 +3052,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     position: relative;
     margin-top: 50px;
     z-index: 1;
+    cursor: pointer;
 }
 .single-course-categories-two:hover .cours-icon {
   -webkit-transform: scale(1.2);
