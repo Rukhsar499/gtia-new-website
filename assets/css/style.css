@@ -159,6 +159,7 @@ buttons:hover .arrow:before {
   padding:20px;
   text-align: center;
   border-radius: 5px;
+  height:100%;
 }
 .bg-r{
   border-right: 1px solid #000091;
@@ -333,6 +334,12 @@ td, th {
   margin-bottom: 4px;
   border-radius: 20px;
 }
+.job-market{
+  margin:30px 0px;
+}
+.job-img{
+padding-top: 40px;
+}
 .fa-facebook, .fa-linkedin, .fa-youtube, .fa-pinterest{
   color: #fff;
   font-size: 24px;
@@ -341,6 +348,8 @@ td, th {
 .pl-img{
   padding: 10px;
   text-align: center;
+  background: #f2f3f4;
+  margin-bottom: 20px;
 }
 .single-related-contents h5{
   font-size: 15px;
@@ -414,7 +423,7 @@ td, th {
   margin-bottom: 50px;
 }
 .p-m{
-    margin-top: 50px !important;
+    margin-top: 20px !important;
 }
 .single-team {
     position: relative;
@@ -4647,7 +4656,7 @@ select option{
 --------------------------*/
 .single-team {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
     margin-top: 5px;
 }
 .single-team-info {
