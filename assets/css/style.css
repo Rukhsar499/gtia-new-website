@@ -135,6 +135,37 @@ buttons:hover .arrow {
 buttons:hover .arrow:before {
   right: 0;
 }
+.fa-graduation-cap, .fa-book, .fa-chart-mixed{
+  color: #000091 !important;
+  font-size: 30px;
+}
+.place-div{
+  background-color: #f2f3f480;
+    padding: 40px 0px 30px;
+}
+.figh{
+  font-weight: 600;
+}
+.teim-img img{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  margin-bottom: 10px;
+}
+.single-team{
+  background: -webkit-linear-gradient(left, #616dfd 0%, #393185 51%, #616dfd 100%);
+  background: linear-gradient(to right, #616dfd 0%, #393185 51%, #616dfd 100%);
+  color: #fff;
+  padding:20px;
+  text-align: center;
+  border-radius: 5px;
+}
+.bg-r{
+  border-right: 1px solid #000091;
+}
+.pl-box{
+  padding: 10px;
+}
 .chose{
   margin-top: 20px;
   padding-right: 20px;
