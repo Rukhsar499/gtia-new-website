@@ -187,7 +187,7 @@ buttons:hover .arrow:before {
   color: #fff;
   border-bottom: 1px solid #fff;
   border-radius: 0px;
-  padding: 10px 0px;
+  padding: 10px 5px;
 }
 .Curri{
     background-color:#0F52BA;
@@ -356,6 +356,7 @@ padding-top: 40px;
 .triaming{
   background-color: #f7f7f7;
     padding: 50px 0px 50px 0px;
+    margin-bottom: 50px;
 }
 .trin-img{
   background-color: #fff;
@@ -2616,7 +2617,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .main-menu ul > li .mega-menu > li ul li a {
   padding: 0;
-  font-size: 14px;
+  font-size: 13px;
   text-transform: capitalize;
   display: block;
   font-weight: 500;
@@ -6390,4 +6391,22 @@ select option{
 .single-gallery-img:hover a::before {
   opacity: 1;
   visibility: visible;
+}
+
+
+.summary {
+  background: #000;
+  color: #fff;
+  padding: 5px 30px;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-transform: capitalize;
+  display: inline-flex;
+}
+
+.summary i {
+  font-size: 14px;
+  color: #FFF;
 }
