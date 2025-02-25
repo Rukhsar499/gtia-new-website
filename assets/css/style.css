@@ -348,7 +348,7 @@ padding-top: 40px;
 .pl-img{
   padding: 10px;
   text-align: center;
-  background: #f2f3f4;
+  /* background: #f2f3f4; */
   margin-bottom: 20px;
   border: 1px solid #00000036;
   box-shadow: 0 4px 8px #bdbdbd;
@@ -4952,7 +4952,7 @@ select option{
     width: 100%;
   }
 .copy-right{
-  margin-bottom: 30px;
+  margin-bottom: 43px;
   font-size: 10px;
 }
 .popular-courses-contnet h5 {
@@ -6288,6 +6288,19 @@ select option{
     font-size: 22px;
     line-height: 26px;
   }
+  .bg-r {
+    border-right: none;
+    border-bottom: 1px solid #000091;
+}
+.pl-box {
+  padding: 20px 10px;
+}
+.job-img {
+  padding: 20px 0px;
+}
+.trin-img {
+  margin-bottom: 10px;
+}
 }
 
 .error-form-input {
@@ -6405,7 +6418,6 @@ select option{
   text-transform: capitalize;
   display: inline-flex;
 }
-
 .summary i {
   font-size: 14px;
   color: #FFF;
