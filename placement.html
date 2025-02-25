@@ -615,8 +615,11 @@
                     <!--    </div>-->
                     <!--</div>-->
                     <div class="text-center mt-5">
-                        <details>
-                            <summary class="summary">view more<span class="ms-3"><i class="fa-solid fa-eye"></i></span></summary>
+                        <details id="toggleDetails">
+                            <summary class="summary">
+                                <span id="toggleText">view more</span>
+                                <span class="ms-3"><i id="toggleIcon" class="fa-solid fa-eye-slash"></i></span>
+                            </summary>
                             <div class="row gy-3">
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="single-team p-m">
@@ -1435,8 +1438,11 @@
                         </div>
 
                         <div class="text-center my-3">
-                            <details>
-                                <summary class="summary">view more<span class="ms-3"><i class="fa-solid fa-eye"></i></span></summary>
+                            <details id="toggleDetail">
+                                <summary class="summary">
+                                    <span id="toggle_text">view more</span>
+                                    <span class="ms-3"><i id="toggle_icon" class="fa-solid fa-eye-slash"></i></span>
+                                </summary>
                                 <div class="row gy-3 pt-4">
                             <div class="col-lg-2 col-md-3 col-6">
                                 <div class="pl-img">
@@ -1741,7 +1747,9 @@
                                     <img src="assets/images/icon/icici-bank.png" alt="icici-bank">
                                 </div>
                             </div>
+                            </details>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -1774,18 +1782,6 @@
             <button class="apply-btn en" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry Now</button>
         </div>
         <!-- End -->
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1844,7 +1840,7 @@
                                     <li><a href="tally-erp-course.html">Tally Prime</a></li>
                                     <li><a href="gst-goods-and-services-tax-course.html">Goods & Services Tax</a></li>
                                     <li><a href="microsoft-office-course.html">Microsoft Office</a></li>
-                                    <li><a href="income-tax-course.html">Income Tax</a></li>
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -2002,6 +1998,31 @@
                 }
             }
         })
+        document.getElementById("toggleDetail").addEventListener("toggle", function() {
+            let text = document.getElementById("toggle_text");
+            let icon = document.getElementById("toggle_icon");
+
+            if (this.open) {
+                text.innerText = "view less";
+                icon.classList.replace("fa-eye-slash", "fa-eye");
+            } else {
+                text.innerText = "view more";
+                icon.classList.replace("fa-eye", "fa-eye-slash");
+            }
+        });
+
+        document.getElementById("toggleDetails").addEventListener("toggle", function() {
+            let text = document.getElementById("toggleText");
+            let icon = document.getElementById("toggleIcon");
+
+            if (this.open) {
+                text.innerText = "view less";
+                icon.classList.replace("fa-eye-slash", "fa-eye");
+            } else {
+                text.innerText = "view more";
+                icon.classList.replace("fa-eye", "fa-eye-slash");
+            }
+        });
     </script>
 
 </body>
