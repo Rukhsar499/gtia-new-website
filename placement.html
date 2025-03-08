@@ -190,6 +190,21 @@
             line-height: 34px;
             position: absolute;
         }
+        .hidden-content {
+            display: none;
+            margin-top: 10px;
+        }
+        #toggleButton {
+            padding: 10px 15px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 50px;
+        }
+        .bvc{
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -614,13 +629,9 @@
                     <!--        </div>-->
                     <!--    </div>-->
                     <!--</div>-->
-                    <div class="text-center mt-5">
-                        <details id="toggleDetails">
-                            <summary class="summary">
-                                <span id="toggleText">view more</span>
-                                <span class="ms-3"><i id="toggleIcon" class="fa-solid fa-eye-slash"></i></span>
-                            </summary>
-                            <div class="row gy-3">
+
+                    <div id="content" class="hidden-content">
+                        <div class="row gy-3">
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="single-team p-m">
                                     <div class="single-team-image teim-img">
@@ -1354,9 +1365,10 @@
                                 </div>
                             </div>
                         </div>
-                        </details>
                     </div>
-                    
+                    <div class="bvc">
+                    <button id="toggleButton" onclick="toggleContent()" class="summary">View More</button>
+                  </div>
                 </div>
             </div>
         </div>
@@ -1999,31 +2011,25 @@
                 }
             }
         })
-        document.getElementById("toggleDetail").addEventListener("toggle", function() {
-            let text = document.getElementById("toggle_text");
-            let icon = document.getElementById("toggle_icon");
+        function toggleContent() {
+            let content = document.getElementById("content");
+            let button = document.getElementById("toggleButton");
 
-            if (this.open) {
-                text.innerText = "view less";
-                icon.classList.replace("fa-eye-slash", "fa-eye");
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block"; // Content show karega
+                
+                // Button ko content ke neeche move karega
+                content.parentNode.appendChild(button);
+                
+                button.innerText = "View Less"; // Button text change karega
             } else {
-                text.innerText = "view more";
-                icon.classList.replace("fa-eye", "fa-eye-slash");
+                content.style.display = "none"; // Content hide karega
+                button.innerText = "View More"; // Button text wapas "View More" hoga
+                
+                // Button ko wapas upar le jaane ke liye
+                content.parentNode.insertBefore(button, content);
             }
-        });
-
-        document.getElementById("toggleDetails").addEventListener("toggle", function() {
-            let text = document.getElementById("toggleText");
-            let icon = document.getElementById("toggleIcon");
-
-            if (this.open) {
-                text.innerText = "view less";
-                icon.classList.replace("fa-eye-slash", "fa-eye");
-            } else {
-                text.innerText = "view more";
-                icon.classList.replace("fa-eye", "fa-eye-slash");
-            }
-        });
+        }
     </script>
 
 </body>
