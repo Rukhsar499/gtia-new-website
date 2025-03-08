@@ -204,10 +204,6 @@
             border-radius: 5px;
             margin-top: 50px;
         }
-
-        .bvc {
-            text-align: center;
-        }
     </style>
 </head>
 
@@ -635,7 +631,7 @@
                 <!--    </div>-->
                 <!--</div>-->
 
-                <div id="content" class="hidden-content">
+                <div id="content" style="display: none;">
                     <div class="row gy-3">
                         <div class="col-lg-4 col-md-4 col-sm-6">
                             <div class="single-team p-m">
@@ -2017,22 +2013,15 @@
             }
         })
         function toggleContent() {
-            let content = document.getElementById("content");
             let button = document.getElementById("toggleButton");
+            let content = document.getElementById("content"); // Apne content ka ID yaha dalen
 
             if (content.style.display === "none" || content.style.display === "") {
-                content.style.display = "block"; // Content show karega
-
-                // Button ko content ke neeche move karega
-                content.parentNode.appendChild(button);
-
-                button.innerText = "View Less"; // Button text change karega
+                content.style.display = "block";
+                button.innerText = "View Less";
             } else {
-                content.style.display = "none"; // Content hide karega
-                button.innerText = "View More"; // Button text wapas "View More" hoga
-
-                // Button ko wapas upar le jaane ke liye
-                content.parentNode.insertBefore(button, content);
+                content.style.display = "none";
+                button.innerText = "View More";
             }
         }
     </script>
